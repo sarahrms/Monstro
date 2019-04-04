@@ -1,0 +1,38 @@
+body{
+    background-color: cornflowerblue;
+}
+
+main {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+aside,.left{
+  width: 50%;
+  float: left;
+}
+
+aside,.right{
+  width: 50%;
+  float: right;
+}
+
+label {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+label,input,select,button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  float: right;
+  margin-right: 150px;
+}
+
+input {
+  margin-left: 25px;
+}

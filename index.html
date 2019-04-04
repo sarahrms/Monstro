@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+      <title> Terrível </title>
+      <link rel="stylesheet" href="estilo.css">
+    </head>
+
+    <body>
+      <main>
+        <aside class="left">
+          <h1> GET </h1>
+          <form action="http://terrivel.herokuapp.com/monster" method="GET">
+            <label>Quantidade de Pedras</label>
+            <input type="number" name="num_pedras" min="0" required> <br>
+            <label>Tamanho das Pedras</label>
+            <input type="number" name="tam_pedras" min="1" max="7" step="0.5" value="3" required> <br>
+            <label>Nome</label>
+            <input type="text" name="nome" pattern="[A-Za-z]{0-20}" required> <br>
+            <label>Cor do céu: Degradê </label>
+            <input type="color" name="corCeu1" required> <input type="color" name="corCeu2"required> <br>
+            <label>Tipo de Pedras</label>
+            <select name="tipo-pedras" required>
+                <option value="marroada">Marroada</option>
+                <option value="ametista">Ametista</option>
+                <option value="topazio">Topazio</option>
+                <option value="espinela">Espinela</option>
+            </select> <br>
+            <label> Pedras Sortidas? </label>
+            <input type="radio" name="tipo_pedras_sortidas" value="sim" checked>
+            <input type="radio" name="tipo_pedras_sortidas" value="nao"> <br>
+            <button type="submit">Enviar</button>
+          </form>
+        </aside>
+        <aside class="right">
+          <h1> POST </h1>
+          <form action="http://terrivel.herokuapp.com/monster" method="POST">
+            <label>Quantidade de Pedras</label>
+            <input type="number" name="num_pedras" min="0" required> <br>
+            <label>Tamanho das Pedras</label>
+            <input type="number" name="tam_pedras" min="1" max="7" step="0.5" value="3" required> <br>
+            <label>Nome</label>
+            <input type="text" name="nome" pattern="[A-Za-z]{0-20}" required> <br>
+            <label>Cor do céu: Degradê </label>
+            <input type="color" name="corCeu1" required> <input type="color" name="corCeu2"required> <br>
+            <label>Tipo de Pedras</label>
+            <select name="tipo-pedras" required>
+                <option value="marroada">Marroada</option>
+                <option value="ametista">Ametista</option>
+                <option value="topazio">Topazio</option>
+                <option value="espinela">Espinela</option>
+            </select> <br>
+            <label> Pedras Sortidas? </label>
+            <input type="radio" name="tipo_pedras_sortidas" value="sim" checked>
+            <input type="radio" name="tipo_pedras_sortidas" value="nao"> <br>
+            <button type="submit">Enviar</button>
+          </form>
+        </aside>
+
+      </main>
+
+    </body>
+
+</html>
